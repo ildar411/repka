@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Заказы список</title>
+  
+ </head>
+<body style="background-image: url(https://scontent-amt2-1.cdninstagram.com/vp/24704623a7e0b0eed815ce20817fd783/5C89FE36/t51.2885-15/e35/44599550_360116991390796_3461880837430540265_n.jpg); background-size: 100%">
+
+  <header style="background-color: red;">
+    <h3>Sweet Mist Lounge</h3>
+  </header>
+  <nav class="navbar navbar-light bg-faded" style="background-color: black; font-size: 15px">
+    <!--<a class="nav-link" href="#ссылка на MainPage.html" name="main">Главная<span class="sr-only">(current)</span></a>-->
+    <!--<a class="nav-link" href="#сылка на table.html" name="tables">Столы</a>-->
+    <a class="nav-link" href="/" name="order" action="">Главная</a>
+    <!--<a class="nav-link" href="#" name="end_fo_work">Закончить смену</a>-->
+    <a href="/stat" class="nav-link" name="stat" action="">Выбрать другой временной отрезок</a>
+  </nav>
+  <h4 style="color: #e3f2fd">Заказы<h4>
+  <!--{% if number_order == 0 %}
+  <h1>Нет заказов за данный период</h1>
+  {% else %}-->
+    <table width="100%" style="width: auto; height: auto; color: #e3f2fd">
+   	  <thead align="center">
+   		 <tr><td>Сумма</td><td>Стол</td><td>Коменнтарий</td><td>Время посадки</td></tr>
+   	  </thead>
+   	  <tbody>
+        {% for i in number_of_order %}
+   		     <tr><td>{{tuple1[1][i]}}</td><td>{{tuple1[2][i]}}</td><td>{{tuple1[3][i]}}</td><td>{{tuple1[4][i]}}</td></tr>
+        {% endfor %}
+   	  </tbody>
+      <tfoot>
+      </tfoot>
+     	<!--{% for var in number_of_order %}
+     		<tb><tr>{{price}}</tr><tr>{{table}}</tr><tr>{{comit}}</tr><tr>{{time_of_start_order}}</tr></tb>
+     	{% endfor %}-->
+    </table>
+  <!--{% endif %}-->
+<article>
+</article>
+
+<footer class="blockquote-footer">
+  <a href="about_us.html">О нас</a>
+	<a href="solidno.html">солидно</a>
+</footer>
+ 
+</body>
+</html>
+
+

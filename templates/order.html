@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+ 
+  <link rel="stylesheet" type="text/css" href="static/il.css">
+  </head>
+<body style="background-image: url(https://scontent-amt2-1.cdninstagram.com/vp/24704623a7e0b0eed815ce20817fd783/5C89FE36/t51.2885-15/e35/44599550_360116991390796_3461880837430540265_n.jpg)">
+
+  <header>Sweet Mist Lounge</header>
+  <nav style="background-color: #e3f2fd;">
+    <!--<a class="nav-link" href="#ссылка на MainPage.html" name="main">Главная<span class="sr-only">(current)</span></a>-->
+    <!--<a class="nav-link" href="#сылка на table.html" name="tables">Столы</a>-->
+    <a href="/stat" name="stat">Показать заказы</a>
+    <a href="/" name="order">Главная</a>
+    <!--<a class="nav-link" href="#" name="end_fo_work">Закончить смену</a>-->
+  </nav>
+  <div class="aeee">
+  <div class="fr">
+  <form method="POST" class='fr1'>
+    <ul type="none">
+      <li><p>Время заказа</p></li>
+      <li>
+          <input type="datetime-local" name="time_of_start_order" id="time_of_start_order" action="order.html" autocomplete="on">
+          <!--<input class="form-control" type="datetime-local" placeholder="Время заказа" autocomplete="on" name="time_of_start_order">-->
+      </li>
+      <li>
+        
+          <input placeholder="Цена" action="order.html" name="price" id="price">
+          
+      </li>
+      <li>
+
+        <input placeholder="Стол" name="table" id="table" action = "order.html" autocomplete="on">
+         
+      </li>
+      <li>
+        
+          <input type="textarea" placeholder="Комментарий" name="comit" action="order.html" id="comit">
+        
+      </li>
+      <li>
+        <br />
+      </li>
+      <li>
+        <button type="submit">OK</button>
+      </li>
+    </ul>
+
+  </form>
+  <br />
+	</div>
+  <div class="ildardiv">
+    <p style="width: auto; height: auto; color: #e3f2fd">последние заказы</p>
+    <table width="100%" style="width: auto; height: auto; color: #e3f2fd">
+      <thead align="center">
+       <tr><td>Сумма</td><td>Стол</td><td>Коменнтарий</td><td>Время посадки</td></tr>
+      </thead>
+      <tbody>
+        {% if tuple1 == undefined %}
+          <p style="width: auto; height: auto; color: #e3f2fd">Заказов пока нет</p>
+        {% else %}
+          {% for i in range(4) %}
+            <tr><td>{{tuple1[1][i]}}</td><td>{{tuple1[2][i]}}</td><td>{{tuple1[3][i]}}</td><td>{{tuple1[4][i]}}</td></tr>
+          {% endfor %}
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

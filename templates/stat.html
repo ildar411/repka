@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Заказы</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ </head>
+<body style="background-image: url(https://scontent-amt2-1.cdninstagram.com/vp/24704623a7e0b0eed815ce20817fd783/5C89FE36/t51.2885-15/e35/44599550_360116991390796_3461880837430540265_n.jpg); background-size: 100%">
+
+  <header style="background-color: red;">
+    <h3>Sweet Mist Lounge</h3>
+  </header>
+  <nav class="navbar navbar-light bg-faded" style="background-color: #e3f2fd;">
+    <!--<a class="nav-link" href="#ссылка на MainPage.html" name="main">Главная<span class="sr-only">(current)</span></a>-->
+    <!--<a class="nav-link" href="#сылка на table.html" name="tables">Столы</a>-->
+    <a class="nav-link" href="/" name="order" action="">Главная</a>
+    <!--<a class="nav-link" href="#" name="end_fo_work">Закончить смену</a>-->
+    <a href="/stat" class="nav-link" name="stat" action="">Показать заказы</a>
+  </nav>
+
+  <aside class="col-sm-6 col-md-12"></aside>
+  <h4>Заказы<h4>
+  <form  method="POST">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+          <label>От</lable>
+          <input type="datetime-local" name="1time_of_start" id="1time_of_start" action="stat.html">
+      </li>
+      <li class="nav-item">
+          <lable>До</lable>
+          <input type="datetime-local" name="1time_of_end" id="1time_of_end" action="stat.html">
+      </li>
+      <li>
+        <button type="submit">Ок</button>
+        <a href="/statistic">Показать</a>
+      </li>
+    </ul> 
+  </form>
+<article>
+</article>
+
+<footer class="blockquote-footer">
+  <a href="about_us.html" class="btn btn-success btn-lg">О нас</a>
+	<a href="solidno.html" class="btn btn-success btn-lg">солидно</a>
+</footer>
+ 
+</body>
+</html>
